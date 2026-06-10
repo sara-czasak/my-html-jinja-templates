@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Form Template{% endblock %}
+
+{% block content %}
+
+<div class="container col-xxl-8 px-4 py-5 mt-4">
+    <div class="text-center">
+        <h1>Template for form below:</h1>
+        <h1>Add success/failure message:</h1>
+        {#        {% if success %}   #}
+<!--            <div class="alert alert-success mt-3">Message sent! I'll get back to you soon.</div>-->
+   {#             {% elif failed %}  #}
+<!--            <div class="alert alert-danger mt-3">   -->
+<!--            Sorry, the message couldn't be sent. Please email me directly at sara.p.czasak.m@gmail.com-->
+<!--            </div>  -->
+     {#           {% endif %}  #}
+        <h3 class="fw-normal contact-page text-monospace"><em class="name-color">Send</em> me a message</h3>
+        <hr>
+        <form method="POST" action="">
+            <h1>Fill out details for form here:</h1>
+     {#         {{ form.hidden_tag() }}  #}
+
+            <div class="mb-3">
+      {#         {{ form.name.label(class="form-label") }}  #}
+      {#         {{ form.name(class="form-control") }}  #}
+            </div>
+
+            <div class="mb-3">
+        {#       {{ form.email.label(class="form-label") }}  #}
+       {#        {{ form.email(class="form-control") }}  #}
+            </div>
+
+            <div class="mb-3">
+         {#       {{ form.message.label(class="form-label") }}  #}
+         {#       {{ form.message(class="form-control", rows=5) }}  #}
+            </div>
+
+     {#            {{ form.submit(class="btn btn-primary email-style") }}  #}
+        </form>
+
+    </div>
+</div>
+{% endblock %}

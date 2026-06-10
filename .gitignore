@@ -1,0 +1,11 @@
+.env
+.venv
+.idea
+.flaskenv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
